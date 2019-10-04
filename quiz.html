@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script>
+            function Student(name,age,semester){
+                    this.name=name
+                    this.age=age
+                    this.semester=semester
+                }
+            std1 = new Student("Umer",23,8)
+            std2 = new Student("Student2",20,8)
+            std3 = new Student("Student3",21,7)
+            console.log("\nThe the created student objects are")
+            console.log(std1)
+            console.log(std2)
+            console.log(std3)
+            Student.prototype.program="BCS"
+            console.log("\nThe student Objects after adding the program through prototype")
+            console.log(std1)
+            console.log(std2)
+            console.log(std3)
+            console.log("\nThe array of students objects is;")
+            array=[std1,std2,std3]
+            console.log(array)
+            function print()
+            {
+                input=prompt("Enter the property name")
+                for(i=0;i<3;i++)
+                {
+                    if(array[i][input]!=undefined)
+                    {
+                        console.log(array[i][input])
+                    }
+                }
+            }
+                print()
+                Object.defineProperty(Student.prototype, 'show', {
+                value: function display(){
+                    console.log(this.name+" "+ this.age+" "+this.semester+" "+this.program)
+                }
+                });
+                std1.show()
+                std2.show()
+                std3.show()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
