@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi-level inheritance</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+        personDetail(){
+            return "My name is "+ this.name +". My age is "+this.age;
+        }
+         
+        }
+        class student extends person{
+            constructor(name,age,qualification,marks){
+                super(name,age);
+                this.qualification = qualification;
+                this.marks = marks;
+
+            }
+        studentDetail(){
+            return "Student name: "+this.name + " Student age: "+this.age+ " Student qualification: "+this.qualification + " Student marks:" +this.marks;
+        }
+        } 
+        class field extends student{
+            constructor(name,age,qualification,marks,fieldname,sem){
+                super(name,age,qualification,marks);
+                this.fieldname = fieldname;
+                this.sem = sem;
+            }
+        fullDetail(){
+            return "Student name: "+this.name + "\n Student age: "+this.age+ " \nStudent qualification: "+this.qualification + "\n Student marks:" +this.marks+ "\nStudent field:"+ this.fieldname + "\n Student semester:" +this.sem; 
+        }
+        }
+       function showDetails(){
+            var fieldObj = new field("noman",22,"Fsc",700,"Computer science",8);
+            document.getElementById("name").value =fieldObj.name ;
+            document.getElementById("age").value =fieldObj.age ;
+            document.getElementById("qualification").value =fieldObj.qualification ;
+            document.getElementById("marks").value =fieldObj.marks ;
+            document.getElementById("fieldname").value =fieldObj.fieldname ;
+            document.getElementById("sem").value =fieldObj.sem ;
+     
+
+            //document.getElementsByName("name").innerHTML(sname);
+}
+
+
+    </script>
+    <label for="name">Name</label>
+    <input type="text" id="name" > <br>
+    <label for="age">Age</label>
+    <input type="text" id="age">  <br>
+    <label for="qualification">Qualification</label>
+    <input type="text" id="qualification">  <br>
+    <label for="marks">Marks</label>
+    <input type="text" id="marks">  <br>
+    <label for="fieldname">Field name</label>
+    <input type="text" id="fieldname">  <br>
+    <label for="sem">Semester</label>
+    <input type="text" id="sem">
+    <button onclick="showDetails()"> Show details </button>
+    
+</body>
+</html>
