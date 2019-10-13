@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- <button type="button" onclick="document.write(5+6)">Try this
+        </button> -->
+        <!-- <p id="demo">Heloo jeeeee</p> -->
+        <!-- <script>
+        
+        // document.getElementById("demo").innerHTML=5+1;
+        </script> -->
+
+
+
+
+
+<!-- <button type="button" onclick="myFun()">click me</button> -->
+<p id="demo"></p>
+<!-- <p id="demo2"></p> -->
+<script>
+// x=5;
+// y=5;
+// z= x+y;
+// document.getElementById("demo").innerHTML="the vale is"+ z;
+// var car=2+3+5;
+// document.getElementById("demo").innerHTML=car;
+
+
+
+// var car=["alto","civic","mehran"];
+// document.getElementById("demo").innerHTML=car[1]
+
+
+
+
+//  var person={firstname:"umer", lastname:"arif",fname:"ariff",
+//   fullname:function()
+// {
+//     return this.firstname+" "+this.lastname;
+// }
+// }
+//  document.getElementById("demo").innerHTML=person.fullname();
+
+
+
+// function myFun(p1,p2)
+// {
+//     return p1*p2;
+// }
+// document.getElementById("demo").innerHTML=myFun(3,2);
+
+
+
+
+// var str= "my name is umer";
+// var search=str.indexOf("is");
+// document.getElementById("demo").innerHTML=search;
+
+
+
+// var str= "my name is umer is";
+// var search=str.search("is");
+// document.getElementById("demo").innerHTML=search;
+
+
+// var str="apple,is,a,fruit"
+// var slice=str.slice(3,6)
+// document.getElementById("demo").innerHTML=slice;
+
+
+
+// var str=[0,1,2,3,4,5,6,7,8]
+// var slice=str.slice(3,7)
+// document.getElementById("demo").innerHTML=slice;
+
+
+
+// var str="apple,is,a,fruit"
+// var substring=str.substring(2,8);
+// document.getElementById("demo").innerHTML=substring;
+
+
+
+
+
+// b=[6,7,8,9,10];
+//         //   b.splice(2,2,30)
+//         //   console.log(b)   
+//          console.log(b.slice(1,3))  
+//          console.log(b.splice(2,0,20,30))
+//          console.log(b)
+
+
+
+// function myFun() {
+//     var str=document.getElementById("demo").innerHTML;
+//     var change=str.replace("code", "program")
+//     document.getElementById("demo").innerHTML=change
+// }
+
+
+
+// function myFun() {
+//     var str=document.getElementById("demo").innerHTML;
+//     document.getElementById("demo").innerHTML=str.toUpperCase();
+// }
+
+// var x=123;
+// console.log(x.valueOf());
+
+// var car=["alto","vitz","suzuki"]
+// car[1]="city";
+// console.log(car)
+
+// var arr=["apple","peach","mango","orange"]
+// var i=0;
+// console.log(arr.length);
+// if(i=0 ; i<arr.length ; i++)
+// {
+
+// }
+
+
+// var fruits, text, fLen, i;
+// fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+
+// text = "<ul>";
+// for (i = 0; i <= fruits.length; i++) {
+//   text += fruits[i] + "</li>";
+// }
+// text += "</ul>";
+
+// document.getElementById("demo").innerHTML = text;
+
+// var fruits = [1,5,6,8,3];
+// document.getElementById("demo").innerHTML=fruits;
+// fruits.shift();
+// document.getElementById("demo2").innerHTML=fruits;
+
+// function myFun()
+// {
+//     fruits.sort();
+//     document.getElementById("demo").innerHTML=fruits
+// }
+
+
+
+//  a=[3,4,5,1,2];
+//         a.sort(function(p1,p2)
+//         {                                                  //////////decending order;
+//             return (p2-p1);
+//         })
+//         console.log(a);
+
+
+
+// var person={firstname:"umer",lastname:"arif",age:"23"};
+// var x;
+// var txt=" "
+// for(x in person)
+// {
+//     // console.log(person[x]);
+//     txt += person[x] + " ";
+// }
+// document.getElementById("demo").innerHTML=txt
+
+
+// class Car{
+
+//     constructor(Brand)
+//     {
+
+//         this.carname=Brand;
+
+//     }
+//     present()
+//     {
+//         return "i have a "+this.carname;
+//     }
+
+
+// }
+// mycar= new Car("Ford")
+// document.getElementById("demo").innerHTML=mycar.present();
+
+
+
+
+
+
+
+// function Student(Name,Age,Semester){
+//     this.age=Age;
+//     this.name=Name;
+//     this.Semester=Semester;
+// }
+// //Adding a property to Student Prototype
+// Student.prototype.program='BCS'
+
+
+
+
+
+
+// class person{
+//     constructor(name,age)
+//     {
+//         this.name=name;
+//         this.age=age;
+//     }
+//     personalDetails(){
+//         return "My name is "+ this.name +". My age is "+this.age;
+
+//     }
+// }
+// class student extends person {
+//     constructor(name,age,qualification,marks)
+
+//     {
+//         super(name,age)
+//         this.marks=marks;
+//         this.qualification=qualification
+//     }
+
+
+
+// }
+
+
+// var arr=[{"name":"Faizan","Age":21},
+//         {"name":"Hanzla","Age":20},
+//         {"name":"XYZ","Age":25}
+// ]
+
+
+
+// console.log(arr[0]["Age"])
+
+
+// arr.forEach(element => {
+//     if(element.Age>=21){
+//         console.log(element.Age)
+//     }
+// });
+
+// for (const key in arr) {
+//    console.log(arr[key])
+// }
+
+// for(const key of arr){
+//     console.log(key)
+// }
+
+
+
+
+
+// x=[1,2,3,4,5]
+// for (a of x){ //access the values of array
+// console.log(a)
+// }
+
+
+// for (a in x ){ // access the index of array 
+//     console.log(a)
+// }
+
+// console.log(typeof(x[0])
+
+
+
+
+</script>
+
+
+
+
+
+
+    </body>
+</html>
