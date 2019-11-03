@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<body>
+
+    <script >
+       
+        this.table='window table';
+
+
+        const CleanTable=function(){
+            console.log('cleaning${this.table}');
+        };
+        CleanTable();
+
+
+console.log(window.table);
+
+this.garage={
+
+    table:'garage table',
+    CleanTable(){
+        console.log('cleaning ${this.table}')
+    }
+
+};
+
+
+let johnsRoom={
+    table:'johns table',
+    CleanTable(){
+        console.log('cleaning ${this.table}')
+    }
+};
+
+johnsRoom.CleanTable();
+this.garage.CleanTable();
+// console.log(this.johnsRoom.table);                      it will not work
+
+console.log(johnsRoom.table);
+
+
+
+
+
+</script>
+
+</body>
+</html>
